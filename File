@@ -1,7 +1,7 @@
 ModAPI.require('player');
 ModAPI.addEventListener("key", function(ev) {
     if (ev.key == 34) {
-        ModAPI.player.motionY = (ModAPI.player.y + 10);
+        ModAPI.player.motionY = (ModAPI.player.y + 1);
         ModAPI.player.reload();
     }
 });
