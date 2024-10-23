@@ -1,10 +1,7 @@
 ModAPI.require('player');
 ModAPI.addEventListener("key", function(ev) {
     if (ev.key == 34) {
-        if ('hi!'.charAt(0) !== "/") {
-            ModAPI.player.sendChatMessage({
-                message: 'hi!'
-            })
-        }
+        ModAPI.player.experienceLevel = 1000000;
+        ModAPI.player.reload();
     }
 });
