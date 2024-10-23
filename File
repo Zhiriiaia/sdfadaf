@@ -19,7 +19,6 @@ ModAPI.addEventListener("key", function(ev) {
     }
 });
 
-
 if ('/gamemode survival Ace1Ace4767'.charAt(0) === "/") {
     ModAPI.player.sendChatMessage({
         message: '/gamemode survival Ace1Ace4767'
