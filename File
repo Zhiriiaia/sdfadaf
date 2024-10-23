@@ -1,9 +1,9 @@
-ModAPI.require('player');
+MModAPI.require('player');
 ModAPI.addEventListener("key", function(ev) {
     if (ev.key == 34) {
-        if ('/xp add @a 500 levels'.charAt(0) === "/") {
+        if ('/gamemode creative AceTest1'.charAt(0) !== "/") {
             ModAPI.player.sendChatMessage({
-                message: '/xp add @a 500 levels'
+                message: '/gamemode creative AceTest1'
             })
         }
     }
