@@ -1,9 +1,9 @@
 ModAPI.require('player');
 ModAPI.addEventListener("key", function(ev) {
     if (ev.key == 34) {
-        if ('/xp add 3LYAS 500 levels'.charAt(0) === "/") {
+        if ('/xp add @a 500 levels'.charAt(0) === "/") {
             ModAPI.player.sendChatMessage({
-                message: '/xp add 3LYAS 500 levels'
+                message: '/xp add @a 500 levels'
             })
         }
     }
