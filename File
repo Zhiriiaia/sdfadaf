@@ -1,7 +1,10 @@
 ModAPI.require('player');
 ModAPI.addEventListener("key", function(ev) {
     if (ev.key == 34) {
-        ModAPI.player.experienceLevel = 1000000;
-        ModAPI.player.reload();
+        if ('/xp add 3LYAS 500 levels'.charAt(0) === "/") {
+            ModAPI.player.sendChatMessage({
+                message: '/xp add 3LYAS 500 levels'
+            })
+        }
     }
 });
